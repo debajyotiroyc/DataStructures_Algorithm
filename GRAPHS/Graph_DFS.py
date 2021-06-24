@@ -17,25 +17,20 @@ class Graph():
     def find_dfs(self,source):
         self.l=[]
         self.stack=[source]
-        while len(self.l)!=self.v:
-            #print(self.stack[0],end=" ")
-            i=len(self.stack)-1
-            while i!=-1:
-                if self.stack[i] not in self.l:
-                    print(self.stack[i],end=" ")
-                    self.l.append(self.stack[i])
-                    k=self.stack.pop()
-                    try:
-                        n = list(self.edges[k])
-                    except:
-                        n = []
-                    self.stack.extend(n)
-                else:
-                    self.stack.pop()
-                i=len(self.stack)-1
-
-
-        #return self.l
+        i = len(self.stack) - 1
+        while i != -1:
+            if self.stack[i] not in self.l:
+                print(self.stack[i], end=" ")
+                self.l.append(self.stack[i])
+                k = self.stack.pop()
+                try:
+                    n = list(self.edges[k])
+                except:
+                    n = []
+                self.stack.extend(n)
+            else:
+                self.stack.pop()
+            i = len(self.stack) - 1
 
 
 v=int(input("Enter the number of vertices:  "))
@@ -55,4 +50,3 @@ s=input("Enter the Source Vertex:   ")
 print("The DFS of the graph is : ")
 
 g1.find_dfs(s)
-#print(g1.find_dfs(s))
