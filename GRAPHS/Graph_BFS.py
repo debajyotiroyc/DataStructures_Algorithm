@@ -42,7 +42,6 @@ class Graph():
             #self.l.extend(list(self.edges[self.l[0]]))
 
 
-
 v=int(input("Enter the number of vertices:  "))
 g1=Graph(v)
 i=0
@@ -53,7 +52,7 @@ while True:
     else:
         break
 
-print("All the connected vertices of this directed graph are:")
+print("All the connected vertices of this graph are:")
 g1.connected_vertices()
 
 s=input("Enter the Source Vertex:   ")
