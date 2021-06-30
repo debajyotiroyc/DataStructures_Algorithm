@@ -43,7 +43,7 @@ while True:
     else:
         break
 
-print("All the connected vertices of this directed graph are:")
+print("All the connected vertices of this graph are:")
 g1.connected_vertices()
 
 s=input("Enter the Source Vertex:   ")
