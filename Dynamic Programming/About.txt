@@ -1,0 +1,5 @@
+Dynamic Programming problems solved using Python.
+
+What is Dynamic Programmimg?
+It is a procedure of solving optimization problems,
+by taking a series of decisions at every step.
