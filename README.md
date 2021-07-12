@@ -6,5 +6,7 @@ Graphs: Algorithms related to graphs.
 
 Dynamic Programming: Algorithms related to DP using memoization or tabulation methods.
 <ul>finds the n-th term in a fibonacci sequence using Memoization approach.</ul>
+<ul>solves the LCS problem with a runtime of O(2^n).</ul>
+<ul>solves the LCS problem using Tabulation method with a runtime of O(mn).</ul>
 
 
